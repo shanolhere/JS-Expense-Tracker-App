@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 240, 240);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+.container {
+  margin: 1rem;
+}
+h4 {
+  text-transform: uppercase;
+  padding: 5px;
+}
+.inc-exp-container {
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.inc-exp-container > div:first-of-type {
+  border-right: 3px solid #dedede;
+}
+.incomebox {
+  margin-right: 30px;
+  padding: 0 40px;
+}
+.expensebox {
+  margin-left: 30px;
+}
+.money-plus {
+  color: rgb(6, 138, 6);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.money-minus {
+  color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+h3 {
+  padding: 10px 0;
+  border-bottom: 2px solid rgb(175, 175, 175);
+}
+.list {
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.list li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 8px;
+  margin: 10px 0;
+}
+.list li.plus {
+  border-right: 5px solid rgb(6, 138, 6);
+}
+
+.list li.minus {
+  border-right: 5px solid red;
+}
+.delete-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+input {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid black;
+  font-size: 1.1rem;
+}
+.btn {
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(245, 76, 245);
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scaleX(0.9);
+}
